@@ -38,8 +38,8 @@ class GoodReadabilityViewController: UIViewController {
     }
     
     private func setupTextFields() {
-        emailTextField.placeholder = "Email address"
-        passwordTextField.placeholder = "Password"
+        emailTextField.placeholder = LocalizedStrings.Readability.emailPlaceholder
+        passwordTextField.placeholder = LocalizedStrings.Readability.passwordPlaceholder
     }
     
     private func setupButtons() {
@@ -61,14 +61,14 @@ class GoodReadabilityViewController: UIViewController {
             $0?.layer.shadowOpacity = 0.15
         }
 
-        loginButton.setTitle("Login", for: .normal)
+        loginButton.setTitle(LocalizedStrings.Readability.loginButtonTitle, for: .normal)
         loginButton.isEnabled = false
     }
     
     private func setupLabels() {
-        continueLabel.text = "Or continue with"
-        signUpLabel.text = "Don't have an account? SIGN UP"
-        forgotPasswordLabel.text = "Forgot password"
+        continueLabel.text = LocalizedStrings.Readability.continueWith
+        signUpLabel.text = LocalizedStrings.Readability.accountQuestion + LocalizedStrings.Readability.signUp
+        forgotPasswordLabel.text = LocalizedStrings.Readability.forgotPassword
     }
     
     //        <a href="https://www.flaticon.com/br/icones-gratis/google" title="google ícones">Google ícones criados por Freepik - Flaticon</a>

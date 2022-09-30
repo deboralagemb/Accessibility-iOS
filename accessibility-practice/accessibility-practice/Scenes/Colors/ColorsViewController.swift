@@ -18,7 +18,7 @@ class ColorsViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = NSLocalizedString("Home.Colors.Button", comment: "")
+        title = LocalizedStrings.Colors.title
         configureViews()
         //    http://web-accessibility.carnegiemuseums.org/design/color/
     }
@@ -33,13 +33,13 @@ class ColorsViewController: UIViewController {
         badExampleView.backgroundColor = .black
         badExampleLabel.textColor = .darkGray
         badExampleLabel.font = .systemFont(ofSize: 18, weight: .light)
-        badExampleLabel.text = NSLocalizedString("Colors.Bad.Example", comment: "")
+        badExampleLabel.text = LocalizedStrings.Colors.badExample
     }
 
     private func configureGoodExampleView() {
         goodExampleView.backgroundColor = .lightGray
         goodExampleLabel.textColor = .black
         goodExampleLabel.font = .systemFont(ofSize: 18, weight: .bold)
-        goodExampleLabel.text = NSLocalizedString("Colors.Good.Example", comment: "")
+        goodExampleLabel.text = LocalizedStrings.Colors.goodExample
     }
 }

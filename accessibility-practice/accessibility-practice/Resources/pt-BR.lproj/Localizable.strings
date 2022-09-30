@@ -11,5 +11,20 @@
 "Home.Fonts.Button" = "Fontes";
 "Home.Readability.Button" = "Legibilidade";
 
+"Colors.Title" = "Cores";
 "Colors.Bad.Example" = "Esse é um exemplo ruim de contraste";
 "Colors.Good.Example" = "Esse é um exemplo bom de contraste";
+
+"Fonts.Title" = "Fontes";
+"Fonts.System.Example" = "Fontes do sistema são dinâmicas";
+"Fonts.Bad.Example" = "Este é um exemplo ruim de fonte dinâmica";
+"Fonts.Good.Example" = "Este é um exemplo bom de fonte dinâmica";
+
+"Readability.Title" = "Legibilidade";
+"Readability.Login.Button" = "Continuar";
+"Readability.Social.Media" = "Ou continue com";
+"Readability.Account.Question" = "Não tem uma conta?";
+"Readability.Sign.Up" = "Cadastre-se";
+"Readability.Forgot.Password" = "Esqueci minha senha";
+"Readability.Email.Address" = "Endereço de email";
+"Readability.Password" = "Senha";

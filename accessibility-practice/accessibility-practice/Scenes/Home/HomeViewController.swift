@@ -17,15 +17,15 @@ class HomeViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = NSLocalizedString("Home.Title", comment: "")
+        title = LocalizedStrings.Home.title
         configureButtons()
     }
 
     // MARK: - Private
     private func configureButtons() {
-        colorsButton.setTitle(NSLocalizedString("Home.Colors.Button", comment: ""), for: .normal)
-        fontsButton.setTitle(NSLocalizedString("Home.Fonts.Button", comment: ""), for: .normal)
-        readabilityButton.setTitle(NSLocalizedString("Home.Readability.Button", comment: ""), for: .normal)
+        colorsButton.setTitle(LocalizedStrings.Home.colorsButtonTitle, for: .normal)
+        fontsButton.setTitle(LocalizedStrings.Home.fontsButtonTitle, for: .normal)
+        readabilityButton.setTitle(LocalizedStrings.Home.readabilityButtonTitle, for: .normal)
     }
 }
 

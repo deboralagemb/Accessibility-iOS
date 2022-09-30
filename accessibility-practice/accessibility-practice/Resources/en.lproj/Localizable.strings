@@ -11,5 +11,20 @@
 "Home.Fonts.Button" = "Fonts";
 "Home.Readability.Button" = "Readability";
 
+"Colors.Title" = "Colors";
 "Colors.Bad.Example" = "This is a bad contrast example";
 "Colors.Good.Example" = "This is a good contrast example";
+
+"Fonts.Title" = "Fonts";
+"Fonts.System.Example" = "System fonts are dynamic";
+"Fonts.Bad.Example" = "This is a bad example of a dynamic font";
+"Fonts.Good.Example" = "This is a good example of a dynamic font";
+
+"Readability.Title" = "Readability";
+"Readability.Login.Button" = "Login";
+"Readability.Social.Media" = "Or continue with";
+"Readability.Account.Question" = "Don't have an account?";
+"Readability.Sign.Up" = "Sign up";
+"Readability.Forgot.Password.Button" = "Forgot password";
+"Readability.Email.Address" = "Email address";
+"Readability.Password" = "Password";

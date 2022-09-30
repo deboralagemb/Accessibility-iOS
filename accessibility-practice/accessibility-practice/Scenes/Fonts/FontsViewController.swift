@@ -17,7 +17,7 @@ class FontsViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = NSLocalizedString("Home.Fonts.Button", comment: "")
+        title = LocalizedStrings.Fonts.title
         configureLabels()
     }
     
@@ -29,7 +29,7 @@ class FontsViewController: UIViewController {
     }
     
     private func configureSystemFontLabel() {
-        systemFontLabel.text = "Fontes do sistema são dinâmicas"
+        systemFontLabel.text = LocalizedStrings.Fonts.systemExample
         systemFontLabel.font = UIFont.preferredFont(forTextStyle: .body)
         systemFontLabel.adjustsFontForContentSizeCategory = true
     }
@@ -39,7 +39,7 @@ class FontsViewController: UIViewController {
             fatalError("Failed to load the `TimesNewRomanPSMT' font.")
         }
         customBadExampleLabel.font = customFont
-        customBadExampleLabel.text = "Este é um exemplo ruim de fonte dinâmica"
+        customBadExampleLabel.text = LocalizedStrings.Fonts.badExample
     }
     
     private func configureCustomGoodExampleLabel() {
@@ -48,6 +48,6 @@ class FontsViewController: UIViewController {
         }
         customGoodExampleLabel.font = UIFontMetrics(forTextStyle: .headline).scaledFont(for: customFont)
         customGoodExampleLabel.adjustsFontForContentSizeCategory = true
-        customGoodExampleLabel.text = "Este é um exemplo bom de fonte dinâmica"
+        customGoodExampleLabel.text = LocalizedStrings.Fonts.goodExample
     }
 }
