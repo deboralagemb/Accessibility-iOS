@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  accessibility-practice
+
+  Created by Débora Lage on 29/09/22.
+  
+*/
+
+"Home.Title" = "Accessibility";
+"Home.Colors.Button" = "Colors";
+"Home.Fonts.Button" = "Fonts";
+"Home.Readability.Button" = "Readability";
