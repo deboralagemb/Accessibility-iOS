@@ -10,6 +10,6 @@ import UIKit
 class FontsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Fonts"
+        title = NSLocalizedString("Home.Fonts.Button", comment: "")
     }
 }

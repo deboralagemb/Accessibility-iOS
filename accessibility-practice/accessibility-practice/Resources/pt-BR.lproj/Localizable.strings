@@ -10,3 +10,6 @@
 "Home.Colors.Button" = "Cores";
 "Home.Fonts.Button" = "Fontes";
 "Home.Readability.Button" = "Legibilidade";
+
+"Colors.Bad.Example" = "Esse é um exemplo ruim de contraste";
+"Colors.Good.Example" = "Esse é um exemplo bom de contraste";

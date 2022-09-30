@@ -10,6 +10,6 @@ import UIKit
 class ReadabilityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Readability"
+        title = NSLocalizedString("Home.Readability.Button", comment: "")
     }
 }
