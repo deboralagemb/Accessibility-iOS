@@ -58,6 +58,7 @@
 		D57146E328E6767200EF49AE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D57146E428E6767200EF49AE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		D57146E528E6767200EF49AE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D57146EC28E6891800EF49AE /* times new roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "times new roman.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +146,7 @@
 		D5304ED328E6703200437231 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D57146E628E684CC00EF49AE /* Fonts */,
 				D5304EAB28E66EC700437231 /* Assets.xcassets */,
 				D57146DE28E6756800EF49AE /* Localizable.strings */,
 			);
@@ -201,6 +203,14 @@
 				D57146D828E673A400EF49AE /* ReadabilityViewController.swift */,
 			);
 			path = Readability;
+			sourceTree = "<group>";
+		};
+		D57146E628E684CC00EF49AE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D57146EC28E6891800EF49AE /* times new roman.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

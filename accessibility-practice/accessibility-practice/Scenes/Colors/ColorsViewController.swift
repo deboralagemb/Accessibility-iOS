@@ -20,6 +20,7 @@ class ColorsViewController: UIViewController {
         super.viewDidLoad()
         title = NSLocalizedString("Home.Colors.Button", comment: "")
         configureViews()
+        //    http://web-accessibility.carnegiemuseums.org/design/color/
     }
     
     // MARK: - Private
