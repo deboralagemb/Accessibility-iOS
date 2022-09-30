@@ -66,7 +66,6 @@ class BadReadabilityViewController: UIViewController {
     
     private func setupLabels() {
         continueLabel.text = "Or continue with"
-        continueLabel.font = UI
         signUpLabel.text = "Don't have an account? SIGN UP"
         forgotPasswordLabel.text = "Forgot password"
     }
