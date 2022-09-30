@@ -19,6 +19,8 @@
 		D57146D728E6736A00EF49AE /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57146D628E6736A00EF49AE /* FontsViewController.swift */; };
 		D57146D928E673A400EF49AE /* ReadabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57146D828E673A400EF49AE /* ReadabilityViewController.swift */; };
 		D57146DC28E6756800EF49AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D57146DE28E6756800EF49AE /* Localizable.strings */; };
+		D57146EE28E6914200EF49AE /* BadReadabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57146ED28E6914200EF49AE /* BadReadabilityViewController.swift */; };
+		D57146F028E6914D00EF49AE /* GoodReadabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57146EF28E6914D00EF49AE /* GoodReadabilityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		D57146E428E6767200EF49AE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		D57146E528E6767200EF49AE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D57146EC28E6891800EF49AE /* times new roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "times new roman.ttf"; sourceTree = "<group>"; };
+		D57146ED28E6914200EF49AE /* BadReadabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadReadabilityViewController.swift; sourceTree = "<group>"; };
+		D57146EF28E6914D00EF49AE /* GoodReadabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodReadabilityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				D57146D828E673A400EF49AE /* ReadabilityViewController.swift */,
+				D57146ED28E6914200EF49AE /* BadReadabilityViewController.swift */,
+				D57146EF28E6914D00EF49AE /* GoodReadabilityViewController.swift */,
 			);
 			path = Readability;
 			sourceTree = "<group>";
@@ -351,6 +357,8 @@
 				D57146D728E6736A00EF49AE /* FontsViewController.swift in Sources */,
 				D57146D528E6736000EF49AE /* ColorsViewController.swift in Sources */,
 				D5304EA328E66EC600437231 /* AppDelegate.swift in Sources */,
+				D57146EE28E6914200EF49AE /* BadReadabilityViewController.swift in Sources */,
+				D57146F028E6914D00EF49AE /* GoodReadabilityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

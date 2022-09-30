@@ -218,6 +218,38 @@
             </objects>
             <point key="canvasLocation" x="591" y="746"/>
         </scene>
+        <!--Bad Readability View Controller-->
+        <scene sceneID="9ch-II-8Z7">
+            <objects>
+                <viewController id="iZl-na-Vgh" customClass="BadReadabilityViewController" customModule="accessibility_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C5l-LV-Jli">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Qpz-vt-lp7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MjH-l0-WAp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bpw-m3-YQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752" y="1478"/>
+        </scene>
+        <!--Good Readability View Controller-->
+        <scene sceneID="m3T-oc-9XK">
+            <objects>
+                <viewController id="GCw-Tu-QEB" customClass="GoodReadabilityViewController" customModule="accessibility_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sXs-b8-Mwq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Q1J-i5-nWm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ACP-xL-KS8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AWg-eP-RsH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763" y="1478"/>
+        </scene>
         <!--Readability View Controller-->
         <scene sceneID="sCp-v1-UKB">
             <objects>
@@ -225,10 +257,42 @@
                     <view key="view" contentMode="scaleToFill" id="fye-eB-fMi">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="csP-xK-gjh">
+                                <rect key="frame" x="16" y="379.66666666666669" width="358" height="84.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiY-8k-DyY">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <segue destination="iZl-na-Vgh" kind="show" id="Ftd-pg-mGs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHq-6c-usj">
+                                        <rect key="frame" x="0.0" y="50.333333333333314" width="358" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <segue destination="GCw-Tu-QEB" kind="show" id="2X7-C6-fVK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4CM-9S-ZJr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="csP-xK-gjh" firstAttribute="centerY" secondItem="fye-eB-fMi" secondAttribute="centerY" id="oby-Ia-Vga"/>
+                            <constraint firstItem="csP-xK-gjh" firstAttribute="leading" secondItem="4CM-9S-ZJr" secondAttribute="leading" constant="16" id="rC1-31-q1W"/>
+                            <constraint firstItem="4CM-9S-ZJr" firstAttribute="trailing" secondItem="csP-xK-gjh" secondAttribute="trailing" constant="16" id="zQC-pe-R8Q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZZa-aC-w8z"/>
+                    <connections>
+                        <outlet property="badExampleButton" destination="OiY-8k-DyY" id="eBD-IK-GwI"/>
+                        <outlet property="goodExampleButton" destination="UHq-6c-usj" id="bwD-ng-U0O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bN-nm-ogc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -36,11 +36,7 @@ class FontsViewController: UIViewController {
     
     private func configureCustomBadExampleLabel() {
         guard let customFont = UIFont(name: "TimesNewRomanPSMT", size: UIFont.labelFontSize) else {
-            fatalError("""
-                Failed to load the "TimesNewRomanPSMT" font.
-                Make sure the font file is included in the project and the font name is spelled correctly.
-                """
-            )
+            fatalError("Failed to load the `TimesNewRomanPSMT' font.")
         }
         customBadExampleLabel.font = customFont
         customBadExampleLabel.text = "Este é um exemplo ruim de fonte dinâmica"
@@ -48,11 +44,7 @@ class FontsViewController: UIViewController {
     
     private func configureCustomGoodExampleLabel() {
         guard let customFont = UIFont(name: "TimesNewRomanPSMT", size: UIFont.labelFontSize) else {
-            fatalError("""
-                Failed to load the "TimesNewRomanPSMT" font.
-                Make sure the font file is included in the project and the font name is spelled correctly.
-                """
-            )
+            fatalError("Failed to load the `TimesNewRomanPSMT' font.")
         }
         customGoodExampleLabel.font = UIFontMetrics(forTextStyle: .headline).scaledFont(for: customFont)
         customGoodExampleLabel.adjustsFontForContentSizeCategory = true
