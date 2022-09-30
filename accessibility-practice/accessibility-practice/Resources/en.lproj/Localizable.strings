@@ -14,6 +14,8 @@
 "Colors.Title" = "Colors";
 "Colors.Bad.Example" = "This is a bad contrast example";
 "Colors.Good.Example" = "This is a good contrast example";
+"Colors.Contrast.Title" = "Colors constrast";
+"Colors.Appearance.Title" = "Light and dark mode";
 
 "Fonts.Title" = "Fonts";
 "Fonts.System.Example" = "System fonts are dynamic";

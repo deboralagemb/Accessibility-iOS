@@ -24,7 +24,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Colors"/>
                                         <connections>
-                                            <segue destination="jRx-cT-24y" kind="show" id="031-fn-Fuo"/>
+                                            <segue destination="Rsl-8J-3I7" kind="show" id="Fb6-P3-oL5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ep-io-9oz">
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="591" y="16"/>
         </scene>
-        <!--Colors View Controller-->
+        <!--Color Contrast View Controller-->
         <scene sceneID="qPA-OG-rXB">
             <objects>
-                <viewController id="jRx-cT-24y" customClass="ColorsViewController" customModule="accessibility_practice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jRx-cT-24y" customClass="ColorContrastViewController" customModule="accessibility_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tJH-83-s8g">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +131,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qar-k2-lW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-129" y="746"/>
+            <point key="canvasLocation" x="-443" y="1478"/>
+        </scene>
+        <!--Light Dark Mode View Controller-->
+        <scene sceneID="Ghk-1o-rgl">
+            <objects>
+                <viewController id="wq0-bV-zFW" customClass="LightDarkModeViewController" customModule="accessibility_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gQp-Gq-RUE" userLabel="View">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mhp-U3-2nw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7rw-N7-AMZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IBS-Pa-l4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="1478"/>
+        </scene>
+        <!--Colors View Controller-->
+        <scene sceneID="chh-Yq-RDc">
+            <objects>
+                <viewController id="Rsl-8J-3I7" customClass="ColorsViewController" customModule="accessibility_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CLe-vD-od0">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ogf-Eg-bLQ">
+                                <rect key="frame" x="16" y="377.66666666666669" width="358" height="88.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSm-s4-mKg" userLabel="Color contrast">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Colors"/>
+                                        <connections>
+                                            <segue destination="jRx-cT-24y" kind="show" id="QTD-sk-7lK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twl-sf-kyR" userLabel="Light and dark mode">
+                                        <rect key="frame" x="0.0" y="54.333333333333314" width="358" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Light and dark mode"/>
+                                        <connections>
+                                            <segue destination="wq0-bV-zFW" kind="show" id="Ikk-MQ-6lO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="giT-yK-9XH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ogf-Eg-bLQ" firstAttribute="leading" secondItem="giT-yK-9XH" secondAttribute="leading" constant="16" id="0Ng-cL-old"/>
+                            <constraint firstItem="ogf-Eg-bLQ" firstAttribute="centerX" secondItem="CLe-vD-od0" secondAttribute="centerX" id="cLM-pQ-7LQ"/>
+                            <constraint firstItem="giT-yK-9XH" firstAttribute="trailing" secondItem="ogf-Eg-bLQ" secondAttribute="trailing" constant="16" id="rsr-KR-Vn8"/>
+                            <constraint firstItem="ogf-Eg-bLQ" firstAttribute="centerY" secondItem="CLe-vD-od0" secondAttribute="centerY" id="w3T-bt-9p7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AIQ-N8-OP5"/>
+                    <connections>
+                        <outlet property="colorContrastButton" destination="MSm-s4-mKg" id="cx8-to-0qA"/>
+                        <outlet property="lightDarkModeButton" destination="Twl-sf-kyR" id="Tf1-Kh-Oas"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHR-iE-vx4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="746"/>
         </scene>
         <!--Fonts View Controller-->
         <scene sceneID="o9T-pW-25t">
@@ -365,7 +430,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpw-m3-YQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="1478"/>
+            <point key="canvasLocation" x="962" y="1478"/>
         </scene>
         <!--Good Readability View Controller-->
         <scene sceneID="m3T-oc-9XK">
@@ -514,7 +579,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWg-eP-RsH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761.5384615384614" y="1477.9620853080569"/>
+            <point key="canvasLocation" x="1654" y="1478"/>
         </scene>
         <!--Readability View Controller-->
         <scene sceneID="sCp-v1-UKB">
