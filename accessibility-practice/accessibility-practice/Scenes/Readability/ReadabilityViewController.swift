@@ -8,9 +8,12 @@
 import UIKit
 
 class ReadabilityViewController: UIViewController {
+    
+    // MARK: - Properties
     @IBOutlet var badExampleButton: UIButton!
     @IBOutlet var goodExampleButton: UIButton!
 
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         title = LocalizedStrings.Readability.title

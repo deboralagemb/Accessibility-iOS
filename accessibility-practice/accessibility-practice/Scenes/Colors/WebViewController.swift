@@ -10,8 +10,10 @@ import WebKit
 
 class WebViewController: UIViewController, WKUIDelegate {
 
-    var webView: WKWebView!
+    // MARK: - Properties
+    private var webView: WKWebView!
     
+    // MARK: - Life cycle
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
