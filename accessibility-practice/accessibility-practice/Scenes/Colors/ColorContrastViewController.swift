@@ -14,13 +14,14 @@ class ColorContrastViewController: UIViewController {
     @IBOutlet private var badExampleLabel: UILabel!
     @IBOutlet private var goodExampleView: UIView!
     @IBOutlet private var goodExampleLabel: UILabel!
-
+    @IBOutlet private var learnMoreButton: UIButton!
+    
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         title = LocalizedStrings.Colors.contrastTitle
         configureViews()
-        //    http://web-accessibility.carnegiemuseums.org/design/color/
+        configureButton()
     }
     
     // MARK: - Private
@@ -41,5 +42,9 @@ class ColorContrastViewController: UIViewController {
         goodExampleLabel.textColor = .black
         goodExampleLabel.font = .systemFont(ofSize: 18, weight: .bold)
         goodExampleLabel.text = LocalizedStrings.Colors.goodExample
+    }
+    
+    private func configureButton() {
+        learnMoreButton.setTitle(LocalizedStrings.Colors.learnMoreButtonTitle, for: .normal)
     }
 }

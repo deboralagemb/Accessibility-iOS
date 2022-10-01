@@ -19,6 +19,7 @@
 "Colors.Appearance.System" = "Usar cores nativas que se iniciam com `system' é uma boa prática (quando possível) porque as cores adaptam-se à troca de aparência.";
 "Colors.Appearance.Bad.Example" = "Usar as demais cores do sistema, ou então cores personalizadas sem nenhum tratamento, podem trazer experiências indesejadas ou desconfortáveis.";
 "Colors.Appearance.Good.Example" = "Entretanto, é possível usar cores personalizadas, alterando-as de acordo com o `UITraitCollection.current.userInterfaceStyle'";
+"Colors.Appearance.Learn.More" = "Saiba mais";
 
 "Fonts.Title" = "Fontes";
 "Fonts.System.Example" = "Fontes do sistema são dinâmicas";

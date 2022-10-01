@@ -26,6 +26,7 @@
 		D5D90DD328E7469F001CC08D /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D90DD228E7469F001CC08D /* LocalizedStrings.swift */; };
 		D5D90DD628E74EB1001CC08D /* LightDarkModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D90DD528E74EB1001CC08D /* LightDarkModeViewController.swift */; };
 		D5D90DD828E74EBA001CC08D /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D90DD728E74EBA001CC08D /* ColorsViewController.swift */; };
+		D5D90DDA28E7CEB4001CC08D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D90DD928E7CEB4001CC08D /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		D5D90DD228E7469F001CC08D /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		D5D90DD528E74EB1001CC08D /* LightDarkModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightDarkModeViewController.swift; sourceTree = "<group>"; };
 		D5D90DD728E74EBA001CC08D /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
+		D5D90DD928E7CEB4001CC08D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				D5D90DD728E74EBA001CC08D /* ColorsViewController.swift */,
 				D57146D428E6736000EF49AE /* ColorContrastViewController.swift */,
 				D5D90DD528E74EB1001CC08D /* LightDarkModeViewController.swift */,
+				D5D90DD928E7CEB4001CC08D /* WebViewController.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				D57146EE28E6914200EF49AE /* BadReadabilityViewController.swift in Sources */,
 				D57146F028E6914D00EF49AE /* GoodReadabilityViewController.swift in Sources */,
 				D5D90DD828E74EBA001CC08D /* ColorsViewController.swift in Sources */,
+				D5D90DDA28E7CEB4001CC08D /* WebViewController.swift in Sources */,
 				D5D90DCF28E7468C001CC08D /* AccessibilityStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
