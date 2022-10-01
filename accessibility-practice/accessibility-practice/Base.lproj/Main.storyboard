@@ -140,10 +140,83 @@
                     <view key="view" contentMode="scaleToFill" id="gQp-Gq-RUE" userLabel="View">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mof-bI-Anr">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lms-cg-FWO">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="234.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJ0-o8-bfb">
+                                                <rect key="frame" x="8" y="107" width="374" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="IJ0-o8-bfb" firstAttribute="centerY" secondItem="Lms-cg-FWO" secondAttribute="centerY" id="If0-2s-HTt"/>
+                                            <constraint firstAttribute="trailing" secondItem="IJ0-o8-bfb" secondAttribute="trailing" constant="8" id="dTt-Nd-SD7"/>
+                                            <constraint firstItem="IJ0-o8-bfb" firstAttribute="leading" secondItem="Lms-cg-FWO" secondAttribute="leading" constant="8" id="yMM-n7-iof"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3C-la-NkK">
+                                        <rect key="frame" x="0.0" y="242.33333333333331" width="390" height="234.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qme-3n-rqx">
+                                                <rect key="frame" x="8" y="107" width="374" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="qme-3n-rqx" secondAttribute="trailing" constant="8" id="L0A-rz-wSq"/>
+                                            <constraint firstItem="qme-3n-rqx" firstAttribute="centerY" secondItem="t3C-la-NkK" secondAttribute="centerY" id="mti-mq-2sM"/>
+                                            <constraint firstItem="qme-3n-rqx" firstAttribute="leading" secondItem="t3C-la-NkK" secondAttribute="leading" constant="8" id="oN9-W9-btX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byb-Bv-ebp">
+                                        <rect key="frame" x="0.0" y="484.66666666666657" width="390" height="234.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsG-RV-PnJ">
+                                                <rect key="frame" x="8" y="107" width="374" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="vsG-RV-PnJ" firstAttribute="leading" secondItem="byb-Bv-ebp" secondAttribute="leading" constant="8" id="W5L-E2-jCz"/>
+                                            <constraint firstItem="vsG-RV-PnJ" firstAttribute="centerY" secondItem="byb-Bv-ebp" secondAttribute="centerY" id="XN9-WD-h3Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="vsG-RV-PnJ" secondAttribute="trailing" constant="8" id="caL-wg-NUX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mhp-U3-2nw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mhp-U3-2nw" firstAttribute="trailing" secondItem="Mof-bI-Anr" secondAttribute="trailing" id="7vh-e5-WV8"/>
+                            <constraint firstItem="Mof-bI-Anr" firstAttribute="top" secondItem="mhp-U3-2nw" secondAttribute="top" id="UKH-oK-hVC"/>
+                            <constraint firstItem="Mof-bI-Anr" firstAttribute="leading" secondItem="mhp-U3-2nw" secondAttribute="leading" id="VFi-f6-xee"/>
+                            <constraint firstItem="mhp-U3-2nw" firstAttribute="bottom" secondItem="Mof-bI-Anr" secondAttribute="bottom" id="ZrA-ji-dvW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7rw-N7-AMZ"/>
+                    <connections>
+                        <outlet property="badExampleLabel" destination="qme-3n-rqx" id="QfJ-FW-cBv"/>
+                        <outlet property="badExampleView" destination="t3C-la-NkK" id="lQ1-YW-hop"/>
+                        <outlet property="goodExampleLabel" destination="vsG-RV-PnJ" id="K68-RF-jDw"/>
+                        <outlet property="goodExampleView" destination="byb-Bv-ebp" id="mRN-MG-Iwe"/>
+                        <outlet property="systemLabel" destination="IJ0-o8-bfb" id="294-Zr-Vv3"/>
+                        <outlet property="systemView" destination="Lms-cg-FWO" id="TWF-Vv-6Y3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IBS-Pa-l4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -647,6 +720,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

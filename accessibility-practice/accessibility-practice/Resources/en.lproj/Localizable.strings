@@ -16,11 +16,14 @@
 "Colors.Good.Example" = "This is a good contrast example";
 "Colors.Contrast.Title" = "Colors constrast";
 "Colors.Appearance.Title" = "Light and dark mode";
+"Colors.Appearance.System" = "Using native colors which names start with `system' is a good practice (when possible) because colors adapt to changing appearance";
+"Colors.Appearance.Bad.Example" = "Using the other colors in the system, or custom colors without any treatment, can bring unwanted or uncomfortable visual experiences.";
+"Colors.Appearance.Good.Example" = "However, it is possible to use custom colors by changing them according to the `UITraitCollection.current.userInterfaceStyle'";
 
 "Fonts.Title" = "Fonts";
 "Fonts.System.Example" = "System fonts are dynamic";
-"Fonts.Bad.Example" = "This is a bad example of a dynamic font";
-"Fonts.Good.Example" = "This is a good example of a dynamic font";
+"Fonts.Bad.Example" = "Custom fonts are not dynamic (bad example)";
+"Fonts.Good.Example" = "Therefore, use `UIFontMetrics' to define the font's dynamic behavior (good example)";
 
 "Readability.Title" = "Readability";
 "Readability.Login.Button" = "Login";

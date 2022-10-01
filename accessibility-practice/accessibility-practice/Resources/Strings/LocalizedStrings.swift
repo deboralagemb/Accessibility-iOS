@@ -24,6 +24,9 @@ public enum LocalizedStrings {
         public static let goodExample = NSLocalizedString("Colors.Good.Example", comment: "")
         public static let contrastTitle = NSLocalizedString("Colors.Contrast.Title", comment: "")
         public static let appearanceTitle = NSLocalizedString("Colors.Appearance.Title", comment: "")
+        public static let systemColor = NSLocalizedString("Colors.Appearance.System", comment: "")
+        public static let badExampleColor = NSLocalizedString("Colors.Appearance.Bad.Example", comment: "")
+        public static let goodExampleColor = NSLocalizedString("Colors.Appearance.Good.Example", comment: "")
     }
     
     // MARK: -

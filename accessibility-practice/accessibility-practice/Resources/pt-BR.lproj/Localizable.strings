@@ -16,11 +16,14 @@
 "Colors.Good.Example" = "Esse é um exemplo bom de contraste";
 "Colors.Contrast.Title" = "Constraste de cores";
 "Colors.Appearance.Title" = "Modo claro e escuro";
+"Colors.Appearance.System" = "Usar cores nativas que se iniciam com `system' é uma boa prática (quando possível) porque as cores adaptam-se à troca de aparência.";
+"Colors.Appearance.Bad.Example" = "Usar as demais cores do sistema, ou então cores personalizadas sem nenhum tratamento, podem trazer experiências indesejadas ou desconfortáveis.";
+"Colors.Appearance.Good.Example" = "Entretanto, é possível usar cores personalizadas, alterando-as de acordo com o `UITraitCollection.current.userInterfaceStyle'";
 
 "Fonts.Title" = "Fontes";
 "Fonts.System.Example" = "Fontes do sistema são dinâmicas";
-"Fonts.Bad.Example" = "Este é um exemplo ruim de fonte dinâmica";
-"Fonts.Good.Example" = "Este é um exemplo bom de fonte dinâmica";
+"Fonts.Bad.Example" = "Fontes customizadas não são dinâmicas (exemplo ruim)";
+"Fonts.Good.Example" = "Para tanto, utilize o `UIFontMetrics' para definir o comportamento dinâmico de sua fonte (exemplo bom)";
 
 "Readability.Title" = "Legibilidade";
 "Readability.Login.Button" = "Continuar";
