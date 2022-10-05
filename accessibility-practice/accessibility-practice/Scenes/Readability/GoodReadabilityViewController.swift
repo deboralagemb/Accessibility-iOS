@@ -24,7 +24,7 @@ class GoodReadabilityViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Good"
+        configureNavBar()
         setupImageView()
         setupTextFields()
         setupButtons()
@@ -32,14 +32,32 @@ class GoodReadabilityViewController: UIViewController {
     }
 
     // MARK: - Private
+    private func configureNavBar() {
+        title = "Good"
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
+    }
+    
     private func setupImageView() {
         let logoImage = UIImage(named: "linkedin")
         logoImageView.image = logoImage
+        setupAccessibilityForImageView()
+    }
+    
+    private func setupAccessibilityForImageView() {
+        logoImageView.isAccessibilityElement = true
+        logoImageView.accessibilityLabel = "Brand logo image"
     }
     
     private func setupTextFields() {
         emailTextField.placeholder = LocalizedStrings.Readability.emailPlaceholder
         passwordTextField.placeholder = LocalizedStrings.Readability.passwordPlaceholder
+        setupAccessibilityForTextFields()
+    }
+    
+    private func setupAccessibilityForTextFields() {
+
     }
     
     private func setupButtons() {
@@ -63,12 +81,22 @@ class GoodReadabilityViewController: UIViewController {
 
         loginButton.setTitle(LocalizedStrings.Readability.loginButtonTitle, for: .normal)
         loginButton.isEnabled = false
+        setupAccessibilityForButtons()
+    }
+    
+    private func setupAccessibilityForButtons() {
+
     }
     
     private func setupLabels() {
         continueLabel.text = LocalizedStrings.Readability.continueWith
         signUpLabel.text = LocalizedStrings.Readability.accountQuestion + LocalizedStrings.Readability.signUp
         forgotPasswordLabel.text = LocalizedStrings.Readability.forgotPassword
+        setupAccessibilityForLabels()
+    }
+    
+    private func setupAccessibilityForLabels() {
+
     }
     
     //        <a href="https://www.flaticon.com/br/icones-gratis/google" title="google ícones">Google ícones criados por Freepik - Flaticon</a>
@@ -79,5 +107,19 @@ class GoodReadabilityViewController: UIViewController {
             
     //        <a href="https://www.flaticon.com/br/stickers-gratis/linkedin" title="linkedin figurinhas">Linkedin figurinhas criadas por Stickers - Flaticon</a>
             
+    private func presentAlert() {
+        let alertTitle = LocalizedStrings.Readability.alertTitle
+        let alertMessage = LocalizedStrings.Readability.alertMessage
+        let alertButton = LocalizedStrings.Readability.alertButton.uppercased()
+        let action = UIAlertAction(title: alertButton, style: .default)
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        alert.addAction(action)
+                                   
+        present(alert, animated: true, completion: nil)
+    }
+    
     // MARK: - Actions
+    @objc func infoButtonTapped() {
+        presentAlert()
+    }
 }

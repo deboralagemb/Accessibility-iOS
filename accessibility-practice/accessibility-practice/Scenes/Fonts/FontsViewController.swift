@@ -17,11 +17,18 @@ class FontsViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = LocalizedStrings.Fonts.title
+        configureNavBar()
         configureLabels()
     }
     
     // MARK: - Private
+    private func configureNavBar() {
+        title = LocalizedStrings.Fonts.title
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
+    }
+    
     private func configureLabels() {
         configureSystemFontLabel()
         configureCustomBadExampleLabel()
@@ -49,5 +56,21 @@ class FontsViewController: UIViewController {
         customGoodExampleLabel.font = UIFontMetrics(forTextStyle: .headline).scaledFont(for: customFont)
         customGoodExampleLabel.adjustsFontForContentSizeCategory = true
         customGoodExampleLabel.text = LocalizedStrings.Fonts.goodExample
+    }
+    
+    private func presentAlert() {
+        let alertTitle = LocalizedStrings.Fonts.alertTitle
+        let alertMessage = LocalizedStrings.Fonts.alertMessage
+        let alertButton = LocalizedStrings.Fonts.alertButton.uppercased()
+        let action = UIAlertAction(title: alertButton, style: .default)
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        alert.addAction(action)
+                                   
+        present(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: - Actions
+    @objc func infoButtonTapped() {
+        presentAlert()
     }
 }

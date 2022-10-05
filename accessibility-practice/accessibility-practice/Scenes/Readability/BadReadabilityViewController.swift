@@ -24,7 +24,7 @@ class BadReadabilityViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Bad"
+        configureNavBar()
         setupImageView()
         setupTextFields()
         setupButtons()
@@ -32,6 +32,13 @@ class BadReadabilityViewController: UIViewController {
     }
 
     // MARK: - Private
+    private func configureNavBar() {
+        title = "Bad"
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
+    }
+    
     private func setupImageView() {
         let logoImage = UIImage(named: "linkedin")
         logoImageView.image = logoImage
@@ -69,5 +76,21 @@ class BadReadabilityViewController: UIViewController {
         continueLabel.text = LocalizedStrings.Readability.continueWith
         signUpLabel.text = LocalizedStrings.Readability.accountQuestion + LocalizedStrings.Readability.signUp
         forgotPasswordLabel.text = LocalizedStrings.Readability.forgotPassword
+    }
+    
+    private func presentAlert() {
+        let alertTitle = LocalizedStrings.Readability.alertTitle
+        let alertMessage = LocalizedStrings.Readability.alertMessage
+        let alertButton = LocalizedStrings.Readability.alertButton.uppercased()
+        let action = UIAlertAction(title: alertButton, style: .default)
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        alert.addAction(action)
+                                   
+        present(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: - Actions
+    @objc func infoButtonTapped() {
+        presentAlert()
     }
 }

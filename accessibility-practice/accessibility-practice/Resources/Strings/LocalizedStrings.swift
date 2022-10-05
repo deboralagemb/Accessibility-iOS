@@ -28,6 +28,11 @@ public enum LocalizedStrings {
         public static let badExampleColor = NSLocalizedString("Colors.Appearance.Bad.Example", comment: "")
         public static let goodExampleColor = NSLocalizedString("Colors.Appearance.Good.Example", comment: "")
         public static let learnMoreButtonTitle = NSLocalizedString("Colors.Appearance.Learn.More", comment: "")
+        public static let alertTitleContrast = NSLocalizedString("Colors.Contrast.Alert.Title", comment: "")
+        public static let alertMessageContrast = NSLocalizedString("Colors.Contrast.Alert.Message", comment: "")
+        public static let alertTitleAppearance = NSLocalizedString("Colors.Appearance.Alert.Title", comment: "")
+        public static let alertMessageAppearance = NSLocalizedString("Colors.Appearance.Alert.Message", comment: "")
+        public static let alertButton = NSLocalizedString("Colors.Alert.Button", comment: "")
     }
     
     // MARK: -
@@ -36,6 +41,9 @@ public enum LocalizedStrings {
         public static let systemExample = NSLocalizedString("Fonts.System.Example", comment: "")
         public static let badExample = NSLocalizedString("Fonts.Bad.Example", comment: "")
         public static let goodExample = NSLocalizedString("Fonts.Good.Example", comment: "")
+        public static let alertTitle = NSLocalizedString("Fonts.Alert.Title", comment: "")
+        public static let alertMessage = NSLocalizedString("Fonts.Alert.Message", comment: "")
+        public static let alertButton = NSLocalizedString("Fonts.Alert.Button", comment: "")
     }
     
     // MARK: -
@@ -48,5 +56,8 @@ public enum LocalizedStrings {
         public static let forgotPassword = NSLocalizedString("Readability.Forgot.Password", comment: "")
         public static let emailPlaceholder = NSLocalizedString("Readability.Email.Address", comment: "")
         public static let passwordPlaceholder = NSLocalizedString("Readability.Password", comment: "")
+        public static let alertTitle = NSLocalizedString("Readability.Alert.Title", comment: "")
+        public static let alertMessage = NSLocalizedString("Readability.Alert.Message", comment: "")
+        public static let alertButton = NSLocalizedString("Readability.Alert.Button", comment: "")
     }
 }

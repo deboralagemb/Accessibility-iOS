@@ -19,12 +19,19 @@ class ColorContrastViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = LocalizedStrings.Colors.contrastTitle
+        configureNavBar()
         configureViews()
         configureButton()
     }
     
     // MARK: - Private
+    private func configureNavBar() {
+        title = LocalizedStrings.Colors.contrastTitle
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
+    }
+    
     private func configureViews() {
         configureBadExampleView()
         configureGoodExampleView()
@@ -46,5 +53,21 @@ class ColorContrastViewController: UIViewController {
     
     private func configureButton() {
         learnMoreButton.setTitle(LocalizedStrings.Colors.learnMoreButtonTitle, for: .normal)
+    }
+    
+    private func presentAlert() {
+        let alertTitle = LocalizedStrings.Colors.alertTitleContrast
+        let alertMessage = LocalizedStrings.Colors.alertMessageContrast
+        let alertButton = LocalizedStrings.Colors.alertButton.uppercased()
+        let action = UIAlertAction(title: alertButton, style: .default)
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: - Actions
+    @objc func infoButtonTapped() {
+        presentAlert()
     }
 }

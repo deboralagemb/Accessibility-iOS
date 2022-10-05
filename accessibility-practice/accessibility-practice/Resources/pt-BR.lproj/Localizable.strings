@@ -20,11 +20,19 @@
 "Colors.Appearance.Bad.Example" = "Usar as demais cores do sistema, ou então cores personalizadas sem nenhum tratamento, podem trazer experiências indesejadas ou desconfortáveis.";
 "Colors.Appearance.Good.Example" = "Entretanto, é possível usar cores personalizadas, alterando-as de acordo com o `UITraitCollection.current.userInterfaceStyle'";
 "Colors.Appearance.Learn.More" = "Saiba mais";
+"Colors.Contrast.Alert.Title" = "Como verificar";
+"Colors.Contrast.Alert.Message" = "Abrir o Accessibility Inspector -> Audit -> Run audit";
+"Colors.Alert.Button" = "Ok";
+"Colors.Appearance.Alert.Title" = "Como verificar";
+"Colors.Appearance.Alert.Message" = "Abra Ajustes e mude a aparência de clara para escura em `Desenvolvedor'";
 
 "Fonts.Title" = "Fontes";
 "Fonts.System.Example" = "Fontes do sistema são dinâmicas";
 "Fonts.Bad.Example" = "Fontes customizadas não são dinâmicas (exemplo ruim)";
 "Fonts.Good.Example" = "Para tanto, utilize o `UIFontMetrics' para definir o comportamento dinâmico de sua fonte (exemplo bom)";
+"Fonts.Alert.Title" = "Como verificar";
+"Fonts.Alert.Message" = "Em Ajustes -> Acessibilidade -> Tela e tamanho de texto -> Texto maior -> Ativar e aumentar a fonte";
+"Fonts.Alert.Button" = "Ok";
 
 "Readability.Title" = "Legibilidade";
 "Readability.Login.Button" = "Continuar";
@@ -34,3 +42,6 @@
 "Readability.Forgot.Password" = "Esqueci minha senha";
 "Readability.Email.Address" = "Endereço de email";
 "Readability.Password" = "Senha";
+"Readability.Alert.Title" = "Como verificar";
+"Readability.Alert.Message" = "Ative o VoiceOver em um dispositivo real ou abra o Accessibility Inspector para o simulador";
+"Readability.Alert.Button" = "Ok";

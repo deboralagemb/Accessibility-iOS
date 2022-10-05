@@ -20,7 +20,7 @@ class LightDarkModeViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = LocalizedStrings.Colors.appearanceTitle
+        configureNavBar()
         configureViews()
     }
     
@@ -32,6 +32,13 @@ class LightDarkModeViewController: UIViewController {
     }
 
     // MARK: - Private
+    private func configureNavBar() {
+        title = LocalizedStrings.Colors.appearanceTitle
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
+    }
+    
     private func configureViews() {
         configureSystemView()
         configureBadExampleView()
@@ -62,5 +69,21 @@ class LightDarkModeViewController: UIViewController {
     
     private func isDarkMode() -> Bool {
         UITraitCollection.current.userInterfaceStyle == .dark
+    }
+    
+    private func presentAlert() {
+        let alertTitle = LocalizedStrings.Colors.alertTitleAppearance
+        let alertMessage = LocalizedStrings.Colors.alertMessageAppearance
+        let alertButton = LocalizedStrings.Colors.alertButton.uppercased()
+        let action = UIAlertAction(title: alertButton, style: .default)
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        alert.addAction(action)
+                                   
+        present(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: - Actions
+    @objc func infoButtonTapped() {
+        presentAlert()
     }
 }

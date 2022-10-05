@@ -20,17 +20,28 @@
 "Colors.Appearance.Bad.Example" = "Using the other colors in the system, or custom colors without any treatment, can bring unwanted or uncomfortable visual experiences.";
 "Colors.Appearance.Good.Example" = "However, it is possible to use custom colors by changing them according to the `UITraitCollection.current.userInterfaceStyle'";
 "Colors.Appearance.Learn.More" = "Learn more";
+"Colors.Contrast.Alert.Title" = "How to verify";
+"Colors.Contrast.Alert.Message" = "Open Accessibility Inspector -> Audit -> Run audit";
+"Colors.Alert.Button" = "Ok";
+"Colors.Appearance.Alert.Title" = "How to verify";
+"Colors.Appearance.Alert.Message" = "Open Settings and change the appearance from light to dark on `Developer'";
 
 "Fonts.Title" = "Fonts";
 "Fonts.System.Example" = "System fonts are dynamic";
 "Fonts.Bad.Example" = "Custom fonts are not dynamic (bad example)";
 "Fonts.Good.Example" = "Therefore, use `UIFontMetrics' to define the font's dynamic behavior (good example)";
+"Fonts.Alert.Title" = "How to verify";
+"Fonts.Alert.Message" = "On Settings -> Accessibility -> Display & Text size -> Larger text -> activate and increase text size";
+"Fonts.Alert.Button" = "Ok";
 
 "Readability.Title" = "Readability";
 "Readability.Login.Button" = "Login";
 "Readability.Social.Media" = "Or continue with";
 "Readability.Account.Question" = "Don't have an account?";
 "Readability.Sign.Up" = "Sign up";
-"Readability.Forgot.Password.Button" = "Forgot password";
+"Readability.Forgot.Password" = "Forgot password";
 "Readability.Email.Address" = "Email address";
 "Readability.Password" = "Password";
+"Readability.Alert.Title" = "How to verify";
+"Readability.Alert.Message" = "Run VoiceOver on real device or open accessibility inspector for simulator";
+"Readability.Alert.Button" = "Ok";
