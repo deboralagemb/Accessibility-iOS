@@ -42,6 +42,16 @@
 "Readability.Forgot.Password" = "Esqueci minha senha";
 "Readability.Email.Address" = "Endereço de email";
 "Readability.Password" = "Senha";
+"Readability.Email.Address.Hint" = "Insira email para continuar";
+"Readability.Password.Hint" = "Insira senha para continuar";
 "Readability.Alert.Title" = "Como verificar";
 "Readability.Alert.Message" = "Ative o VoiceOver em um dispositivo real ou abra o Accessibility Inspector para o simulador";
 "Readability.Alert.Button" = "Ok";
+
+"Accessibility.Facebook.Button" = "Abrir Facebook";
+"Accessibility.Google.Button" = "Abrir Google";
+"Accessibility.Twitter.Button" = "Abrir Twitter";
+
+"Accessibility.Facebook.Button.Hint" = "Sign in with Facebook account";
+"Accessibility.Google.Button.Hint" = "Sign in with Google account";
+"Accessibility.Twitter.Button.Hint" = "Sign in with Twitter account";

@@ -57,7 +57,8 @@ class GoodReadabilityViewController: UIViewController {
     }
     
     private func setupAccessibilityForTextFields() {
-
+        emailTextField.accessibilityHint = AccessibilityHints.Fields.emailField
+        passwordTextField.accessibilityHint = AccessibilityHints.Fields.passwordField
     }
     
     private func setupButtons() {
@@ -85,7 +86,12 @@ class GoodReadabilityViewController: UIViewController {
     }
     
     private func setupAccessibilityForButtons() {
-
+        googleButton.accessibilityLabel = AccessibilityStrings.Buttons.googleButton
+        twitterButton.accessibilityLabel = AccessibilityStrings.Buttons.twitterButton
+        facebookButton.accessibilityLabel = AccessibilityStrings.Buttons.facebookButton
+        googleButton.accessibilityHint = AccessibilityHints.Buttons.googleButton
+        twitterButton.accessibilityHint = AccessibilityHints.Buttons.twitterButton
+        facebookButton.accessibilityHint = AccessibilityHints.Buttons.facebookButton
     }
     
     private func setupLabels() {
