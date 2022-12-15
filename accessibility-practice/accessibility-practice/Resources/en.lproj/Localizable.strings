@@ -10,6 +10,7 @@
 "Home.Colors.Button" = "Colors";
 "Home.Fonts.Button" = "Fonts";
 "Home.Readability.Button" = "Readability";
+"Home.ImagesRef.Button" = "Images' authors attribution";
 
 "Colors.Title" = "Colors";
 "Colors.Bad.Example" = "This is a bad contrast example";
@@ -52,6 +53,11 @@
 "Accessibility.Google.Button" = "Open Google";
 "Accessibility.Twitter.Button" = "Open Twitter";
 
-"Accessibility.Facebook.Button.Hint" = "Continuar com uma conta do Facebook";
-"Accessibility.Google.Button.Hint" = "Continuar com uma conta do Google";
-"Accessibility.Twitter.Button.Hint" = "Continuar com uma conta do Twitter";
+"Accessibility.Facebook.Button.Hint" = "Sign in with Facebook account";
+"Accessibility.Google.Button.Hint" = "Sign in with Google account";
+"Accessibility.Twitter.Button.Hint" = "Sign in with Twitter account";
+
+"ImagesRef.Facebook.Button.Title" = "Facebook icons created by NajmunNahar - Flaticon";
+"ImagesRef.Google.Button.Title" = "Google icons created by Freepik - Flaticon";
+"ImagesRef.Twitter.Button.Title" = "Twitter icons created by Pixel perfect - Flaticon";
+"ImagesRef.Linkedin.Button.Title" = "Linkedin stickers created by Stickers - Flaticon";

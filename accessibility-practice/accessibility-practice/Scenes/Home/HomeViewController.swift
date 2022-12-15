@@ -13,7 +13,8 @@ class HomeViewController: UIViewController {
     @IBOutlet private var colorsButton: UIButton!
     @IBOutlet private var fontsButton: UIButton!
     @IBOutlet private var readabilityButton: UIButton!
-
+    @IBOutlet private var imagesRefButton: UIButton!
+    
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class HomeViewController: UIViewController {
         colorsButton.setTitle(LocalizedStrings.Home.colorsButtonTitle, for: .normal)
         fontsButton.setTitle(LocalizedStrings.Home.fontsButtonTitle, for: .normal)
         readabilityButton.setTitle(LocalizedStrings.Home.readabilityButtonTitle, for: .normal)
+        imagesRefButton.setTitle(LocalizedStrings.Home.imagesRefButtonTitle, for: .normal)
     }
 }
 

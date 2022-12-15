@@ -15,6 +15,7 @@ public enum LocalizedStrings {
         public static let colorsButtonTitle = NSLocalizedString("Home.Colors.Button", comment: "")
         public static let fontsButtonTitle = NSLocalizedString("Home.Fonts.Button", comment: "")
         public static let readabilityButtonTitle = NSLocalizedString("Home.Readability.Button", comment: "")
+        public static let imagesRefButtonTitle = NSLocalizedString("Home.ImagesRef.Button", comment: "")
     }
     
     // MARK: -
@@ -59,5 +60,13 @@ public enum LocalizedStrings {
         public static let alertTitle = NSLocalizedString("Readability.Alert.Title", comment: "")
         public static let alertMessage = NSLocalizedString("Readability.Alert.Message", comment: "")
         public static let alertButton = NSLocalizedString("Readability.Alert.Button", comment: "")
+    }
+    
+    // MARK: -
+    public enum ImagesRef {
+        public static let facebookTitle = NSLocalizedString("ImagesRef.Facebook.Button.Title", comment: "")
+        public static let googleTitle = NSLocalizedString("ImagesRef.Google.Button.Title", comment: "")
+        public static let twitterTitle = NSLocalizedString("ImagesRef.Twitter.Button.Title", comment: "")
+        public static let linkedinTitle = NSLocalizedString("ImagesRef.Linkedin.Button.Title", comment: "")
     }
 }

@@ -10,6 +10,7 @@
 "Home.Colors.Button" = "Cores";
 "Home.Fonts.Button" = "Fontes";
 "Home.Readability.Button" = "Legibilidade";
+"Home.ImagesRef.Button" = "Atribuição aos autores das imagens";
 
 "Colors.Title" = "Cores";
 "Colors.Bad.Example" = "Esse é um exemplo ruim de contraste";
@@ -52,6 +53,11 @@
 "Accessibility.Google.Button" = "Abrir Google";
 "Accessibility.Twitter.Button" = "Abrir Twitter";
 
-"Accessibility.Facebook.Button.Hint" = "Sign in with Facebook account";
-"Accessibility.Google.Button.Hint" = "Sign in with Google account";
-"Accessibility.Twitter.Button.Hint" = "Sign in with Twitter account";
+"Accessibility.Facebook.Button.Hint" = "Continuar com uma conta do Facebook";
+"Accessibility.Google.Button.Hint" = "Continuar com uma conta do Google";
+"Accessibility.Twitter.Button.Hint" = "Continuar com uma conta do Twitter";
+
+"ImagesRef.Facebook.Button.Title" = "Facebook ícones criados por NajmunNahar - Flaticon";
+"ImagesRef.Google.Button.Title" = "Google ícones criados por Freepik - Flaticon";
+"ImagesRef.Twitter.Button.Title" = "Twitter ícones criados por Pixel perfect - Flaticon";
+"ImagesRef.Linkedin.Button.Title" = "Linkedin figurinhas criadas por Stickers - Flaticon";

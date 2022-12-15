@@ -45,11 +45,22 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ne-em-JLr">
+                                <rect key="frame" x="16" y="755.66666666666663" width="358" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <segue destination="10e-5I-1oa" kind="presentation" id="txe-zD-UxH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7ne-em-JLr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2Bf-Lv-LGe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7ne-em-JLr" secondAttribute="bottom" constant="20" id="9Y4-nf-1N7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JNO-nd-nvB" secondAttribute="trailing" constant="16" id="SJx-yk-PAE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7ne-em-JLr" secondAttribute="trailing" constant="16" id="jQL-Ar-QOH"/>
                             <constraint firstItem="JNO-nd-nvB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nSu-q7-zso"/>
                             <constraint firstItem="JNO-nd-nvB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ssK-B2-UPu"/>
                             <constraint firstItem="JNO-nd-nvB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xUK-T8-8d6"/>
@@ -59,12 +70,46 @@
                     <connections>
                         <outlet property="colorsButton" destination="n3J-Na-KMG" id="JW0-Ux-I41"/>
                         <outlet property="fontsButton" destination="0ep-io-9oz" id="w6A-gm-Fii"/>
+                        <outlet property="imagesRefButton" destination="7ne-em-JLr" id="RLc-2q-gj4"/>
                         <outlet property="readabilityButton" destination="Huc-zi-2Gi" id="Z8h-VB-oV4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="591" y="16"/>
+        </scene>
+        <!--Images Attribution View Controller-->
+        <scene sceneID="yVH-0T-S9Y">
+            <objects>
+                <tableViewController id="10e-5I-1oa" customClass="ImagesAttributionViewController" customModule="accessibility_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="io5-E3-pvv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="imageAttributionCell" textLabel="e2w-a4-XSI" style="IBUITableViewCellStyleDefault" id="TSU-2W-LOK">
+                                <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TSU-2W-LOK" id="KwC-2o-Tgj">
+                                    <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e2w-a4-XSI">
+                                            <rect key="frame" x="20" y="0.0" width="331.66666666666669" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3A-SJ-fHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1311" y="16"/>
         </scene>
         <!--Color Contrast View Controller-->
         <scene sceneID="qPA-OG-rXB">

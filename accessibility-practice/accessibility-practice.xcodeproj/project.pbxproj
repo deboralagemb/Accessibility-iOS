@@ -15,6 +15,7 @@
 		D5304EBA28E66EC700437231 /* accessibility_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5304EB928E66EC700437231 /* accessibility_practiceTests.swift */; };
 		D5304EC428E66EC700437231 /* accessibility_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5304EC328E66EC700437231 /* accessibility_practiceUITests.swift */; };
 		D5304EC628E66EC700437231 /* accessibility_practiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5304EC528E66EC700437231 /* accessibility_practiceUITestsLaunchTests.swift */; };
+		D566AB98294ABCFE00845AA4 /* ImagesAttributionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D566AB97294ABCFE00845AA4 /* ImagesAttributionViewController.swift */; };
 		D57146D528E6736000EF49AE /* ColorContrastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57146D428E6736000EF49AE /* ColorContrastViewController.swift */; };
 		D57146D728E6736A00EF49AE /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57146D628E6736A00EF49AE /* FontsViewController.swift */; };
 		D57146D928E673A400EF49AE /* ReadabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57146D828E673A400EF49AE /* ReadabilityViewController.swift */; };
@@ -59,6 +60,7 @@
 		D5304EBF28E66EC700437231 /* accessibility-practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "accessibility-practiceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5304EC328E66EC700437231 /* accessibility_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accessibility_practiceUITests.swift; sourceTree = "<group>"; };
 		D5304EC528E66EC700437231 /* accessibility_practiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accessibility_practiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D566AB97294ABCFE00845AA4 /* ImagesAttributionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesAttributionViewController.swift; sourceTree = "<group>"; };
 		D57146D428E6736000EF49AE /* ColorContrastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorContrastViewController.swift; sourceTree = "<group>"; };
 		D57146D628E6736A00EF49AE /* FontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsViewController.swift; sourceTree = "<group>"; };
 		D57146D828E673A400EF49AE /* ReadabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadabilityViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				D5304EA628E66EC600437231 /* HomeViewController.swift */,
+				D566AB97294ABCFE00845AA4 /* ImagesAttributionViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				D5304EA728E66EC600437231 /* HomeViewController.swift in Sources */,
 				D5D90DD628E74EB1001CC08D /* LightDarkModeViewController.swift in Sources */,
 				D57146D928E673A400EF49AE /* ReadabilityViewController.swift in Sources */,
+				D566AB98294ABCFE00845AA4 /* ImagesAttributionViewController.swift in Sources */,
 				D57146D728E6736A00EF49AE /* FontsViewController.swift in Sources */,
 				D5D90DD328E7469F001CC08D /* LocalizedStrings.swift in Sources */,
 				D57146D528E6736000EF49AE /* ColorContrastViewController.swift in Sources */,
