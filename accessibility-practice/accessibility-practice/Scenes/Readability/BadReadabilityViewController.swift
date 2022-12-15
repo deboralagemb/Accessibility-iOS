@@ -74,8 +74,32 @@ class BadReadabilityViewController: UIViewController {
     
     private func setupLabels() {
         continueLabel.text = LocalizedStrings.Readability.continueWith
-        signUpLabel.text = LocalizedStrings.Readability.accountQuestion + LocalizedStrings.Readability.signUp
+        setupForgotPasswordLabel()
+        setupSignUpLabel()
+    }
+    
+    func setupForgotPasswordLabel() {
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(forgotPasswordLabelTapped))
+        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
+        let underlineAttributedString = NSAttributedString(string: LocalizedStrings.Readability.forgotPassword,
+                                                           attributes: underlineAttribute)
+        forgotPasswordLabel.attributedText = underlineAttributedString
+        forgotPasswordLabel.addGestureRecognizer(gestureRecognizer)
+        forgotPasswordLabel.isUserInteractionEnabled = true
         forgotPasswordLabel.text = LocalizedStrings.Readability.forgotPassword
+    }
+    
+    func setupSignUpLabel() {
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(signUpLabelTapped))
+        let accountString = LocalizedStrings.Readability.accountQuestion + " "
+        let signUpString = LocalizedStrings.Readability.signUp
+        let underlineAttributedString = NSMutableAttributedString(string: accountString + signUpString)
+        underlineAttributedString.addAttribute(.underlineStyle,
+                                               value: NSUnderlineStyle.thick.rawValue,
+                                               range: (underlineAttributedString.string as NSString).range(of: signUpString))
+        signUpLabel.attributedText = underlineAttributedString
+        signUpLabel.addGestureRecognizer(gestureRecognizer)
+        signUpLabel.isUserInteractionEnabled = true
     }
     
     private func presentAlert() {
@@ -91,6 +115,14 @@ class BadReadabilityViewController: UIViewController {
     
     // MARK: - Actions
     @objc func infoButtonTapped() {
+        presentAlert()
+    }
+    
+    @objc func forgotPasswordLabelTapped() {
+        presentAlert()
+    }
+
+    @objc func signUpLabelTapped() {
         presentAlert()
     }
 }
