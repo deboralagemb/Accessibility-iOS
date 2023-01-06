@@ -33,7 +33,7 @@ class GoodReadabilityViewController: UIViewController {
 
     // MARK: - Private
     private func configureNavBar() {
-        title = "Good"
+        title = LocalizedStrings.Readability.goodTitle
         let infoButton = UIButton(type: .infoLight)
         infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
@@ -128,14 +128,6 @@ class GoodReadabilityViewController: UIViewController {
     private func setupAccessibilityForLabels() {
 
     }
-    
-    //        <a href="https://www.flaticon.com/br/icones-gratis/google" title="google ícones">Google ícones criados por Freepik - Flaticon</a>
-            
-    //        <a href="https://www.flaticon.com/br/icones-gratis/twitter" title="twitter ícones">Twitter ícones criados por Pixel perfect - Flaticon</a>
-            
-    //        <a href="https://www.flaticon.com/br/icones-gratis/facebook" title="facebook ícones">Facebook ícones criados por NajmunNahar - Flaticon</a>
-            
-    //        <a href="https://www.flaticon.com/br/stickers-gratis/linkedin" title="linkedin figurinhas">Linkedin figurinhas criadas por Stickers - Flaticon</a>
             
     private func presentAlert() {
         let alertTitle = LocalizedStrings.Readability.alertTitle
@@ -148,16 +140,26 @@ class GoodReadabilityViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    private func genericButtonTapped() {
+        let alertTitle = LocalizedStrings.Readability.genericAlertTitle
+        let alertButton = LocalizedStrings.Readability.alertButton.uppercased()
+        let action = UIAlertAction(title: alertButton, style: .default)
+        let alert = UIAlertController(title: alertTitle, message: nil, preferredStyle: .alert)
+        alert.addAction(action)
+                                   
+        present(alert, animated: true, completion: nil)
+    }
+    
     // MARK: - Actions
     @objc func infoButtonTapped() {
         presentAlert()
     }
 
     @objc func forgotPasswordLabelTapped() {
-        presentAlert()
+        genericButtonTapped()
     }
 
     @objc func signUpLabelTapped() {
-        presentAlert()
+        genericButtonTapped()
     }
 }

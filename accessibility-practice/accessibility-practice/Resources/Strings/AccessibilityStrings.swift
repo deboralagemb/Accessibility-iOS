@@ -17,29 +17,21 @@ public enum AccessibilityStrings {
     }
     
     // MARK: -
-    public enum Headings {
-        
-    }
+    public enum Headings { }
     
     // MARK: -
     public enum Images {
-        
+        public static let brandLogoImage = NSLocalizedString("Accessibility.Brand.Image", comment: "")
     }
     
     // MARK: -
-    public enum Views {
-        
-    }
+    public enum Views { }
     
     // MARK: -
-    public enum Fields {
-        
-    }
+    public enum Fields { }
     
     // MARK: -
-    public enum Labels {
-        
-    }
+    public enum Labels { }
 }
 
 public enum AccessibilityHints {
@@ -52,19 +44,13 @@ public enum AccessibilityHints {
     }
     
     // MARK: -
-    public enum Headings {
-        
-    }
+    public enum Headings { }
     
     // MARK: -
-    public enum Images {
-        
-    }
+    public enum Images { }
     
     // MARK: -
-    public enum Views {
-        
-    }
+    public enum Views { }
     
     // MARK: -
     public enum Fields {
@@ -73,7 +59,5 @@ public enum AccessibilityHints {
     }
     
     // MARK: -
-    public enum Labels {
-        
-    }
+    public enum Labels { }
 }

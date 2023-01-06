@@ -36,6 +36,8 @@
 "Fonts.Alert.Button" = "Ok";
 
 "Readability.Title" = "Readability";
+"Readability.Good.Button.Title" = "Good readability";
+"Readability.Bad.Button.Title" = "Bad readability";
 "Readability.Login.Button" = "Login";
 "Readability.Social.Media" = "Or continue with";
 "Readability.Account.Question" = "Don't have an account?";
@@ -48,6 +50,7 @@
 "Readability.Alert.Title" = "How to verify";
 "Readability.Alert.Message" = "Run VoiceOver on real device or open accessibility inspector for simulator";
 "Readability.Alert.Button" = "Ok";
+"Readability.Generic.Alert.Title" = "Generic button action";
 
 "Accessibility.Facebook.Button" = "Open Facebook";
 "Accessibility.Google.Button" = "Open Google";
@@ -56,8 +59,9 @@
 "Accessibility.Facebook.Button.Hint" = "Sign in with Facebook account";
 "Accessibility.Google.Button.Hint" = "Sign in with Google account";
 "Accessibility.Twitter.Button.Hint" = "Sign in with Twitter account";
+"Accessibility.Brand.Image" = "Brand logo image";
 
 "ImagesRef.Facebook.Button.Title" = "Facebook icons created by NajmunNahar - Flaticon";
 "ImagesRef.Google.Button.Title" = "Google icons created by Freepik - Flaticon";
 "ImagesRef.Twitter.Button.Title" = "Twitter icons created by Pixel perfect - Flaticon";
-"ImagesRef.Linkedin.Button.Title" = "Linkedin stickers created by Stickers - Flaticon";
+"ImagesRef.Linkedin.Button.Title" = "LinkedIn stickers created by Stickers - Flaticon";

@@ -33,7 +33,7 @@ class BadReadabilityViewController: UIViewController {
 
     // MARK: - Private
     private func configureNavBar() {
-        title = "Bad"
+        title = LocalizedStrings.Readability.badTitle
         let infoButton = UIButton(type: .infoLight)
         infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
@@ -113,16 +113,26 @@ class BadReadabilityViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    private func genericButtonTapped() {
+        let alertTitle = LocalizedStrings.Readability.genericAlertTitle
+        let alertButton = LocalizedStrings.Readability.alertButton.uppercased()
+        let action = UIAlertAction(title: alertButton, style: .default)
+        let alert = UIAlertController(title: alertTitle, message: nil, preferredStyle: .alert)
+        alert.addAction(action)
+                                   
+        present(alert, animated: true, completion: nil)
+    }
+    
     // MARK: - Actions
     @objc func infoButtonTapped() {
         presentAlert()
     }
     
     @objc func forgotPasswordLabelTapped() {
-        presentAlert()
+        genericButtonTapped()
     }
 
     @objc func signUpLabelTapped() {
-        presentAlert()
+        genericButtonTapped()
     }
 }

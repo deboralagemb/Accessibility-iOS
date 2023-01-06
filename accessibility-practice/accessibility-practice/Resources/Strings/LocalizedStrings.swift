@@ -50,6 +50,8 @@ public enum LocalizedStrings {
     // MARK: -
     public enum Readability {
         public static let title = NSLocalizedString("Readability.Title", comment: "")
+        public static let goodTitle = NSLocalizedString("Readability.Good.Button.Title", comment: "")
+        public static let badTitle = NSLocalizedString("Readability.Bad.Button.Title", comment: "")
         public static let loginButtonTitle = NSLocalizedString("Readability.Login.Button", comment: "")
         public static let continueWith = NSLocalizedString("Readability.Social.Media", comment: "")
         public static let accountQuestion = NSLocalizedString("Readability.Account.Question", comment: "")
@@ -60,6 +62,7 @@ public enum LocalizedStrings {
         public static let alertTitle = NSLocalizedString("Readability.Alert.Title", comment: "")
         public static let alertMessage = NSLocalizedString("Readability.Alert.Message", comment: "")
         public static let alertButton = NSLocalizedString("Readability.Alert.Button", comment: "")
+        public static let genericAlertTitle = NSLocalizedString("Readability.Generic.Alert.Title", comment: "")
     }
     
     // MARK: -

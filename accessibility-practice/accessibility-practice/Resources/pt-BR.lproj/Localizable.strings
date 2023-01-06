@@ -36,6 +36,8 @@
 "Fonts.Alert.Button" = "Ok";
 
 "Readability.Title" = "Legibilidade";
+"Readability.Good.Button.Title" = "Legibilidade boa";
+"Readability.Bad.Button.Title" = "Legibilidade ruim";
 "Readability.Login.Button" = "Continuar";
 "Readability.Social.Media" = "Ou continue com";
 "Readability.Account.Question" = "Não tem uma conta?";
@@ -48,6 +50,7 @@
 "Readability.Alert.Title" = "Como verificar";
 "Readability.Alert.Message" = "Ative o VoiceOver em um dispositivo real ou abra o Accessibility Inspector para o simulador";
 "Readability.Alert.Button" = "Ok";
+"Readability.Generic.Alert.Title" = "Ação para botão genérico";
 
 "Accessibility.Facebook.Button" = "Abrir Facebook";
 "Accessibility.Google.Button" = "Abrir Google";
@@ -56,8 +59,9 @@
 "Accessibility.Facebook.Button.Hint" = "Continuar com uma conta do Facebook";
 "Accessibility.Google.Button.Hint" = "Continuar com uma conta do Google";
 "Accessibility.Twitter.Button.Hint" = "Continuar com uma conta do Twitter";
+"Accessibility.Brand.Image" = "Imagem do logotipo da marca";
 
 "ImagesRef.Facebook.Button.Title" = "Facebook ícones criados por NajmunNahar - Flaticon";
 "ImagesRef.Google.Button.Title" = "Google ícones criados por Freepik - Flaticon";
 "ImagesRef.Twitter.Button.Title" = "Twitter ícones criados por Pixel perfect - Flaticon";
-"ImagesRef.Linkedin.Button.Title" = "Linkedin figurinhas criadas por Stickers - Flaticon";
+"ImagesRef.Linkedin.Button.Title" = "LinkedIn figurinhas criadas por Stickers - Flaticon";

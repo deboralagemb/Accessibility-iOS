@@ -21,8 +21,8 @@ class ReadabilityViewController: UIViewController {
     }
     
     private func configureButtons() {
-        let badExampleTitle = "Bad"
-        let goodExampleTitle = "Good"
+        let badExampleTitle = LocalizedStrings.Readability.badTitle
+        let goodExampleTitle = LocalizedStrings.Readability.goodTitle
         badExampleButton.setTitle(badExampleTitle, for: .normal)
         goodExampleButton.setTitle(goodExampleTitle, for: .normal)
     }
