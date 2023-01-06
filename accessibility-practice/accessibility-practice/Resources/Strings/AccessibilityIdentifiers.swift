@@ -9,22 +9,14 @@ import Foundation
 
 public enum AccessibilityIdentifiers {
     // MARK: -
-    public enum Home {
-        
-    }
+    public enum Home { }
     
     // MARK: -
-    public enum Colors {
-        
-    }
+    public enum Colors { }
     
     // MARK: -
-    public enum Fonts {
-        
-    }
+    public enum Fonts { }
     
     // MARK: -
-    public enum Readability {
-        
-    }
+    public enum Readability { }
 }
