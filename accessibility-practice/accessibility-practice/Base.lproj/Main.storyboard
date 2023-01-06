@@ -792,6 +792,9 @@
                                 <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hmk-IH-eJK">
+                                <rect key="frame" x="185" y="412" width="20" height="20"/>
+                            </activityIndicatorView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68Q-YW-JeX">
                                 <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                                 <items>
@@ -815,7 +818,9 @@
                             <constraint firstItem="2aw-tg-O9u" firstAttribute="leading" secondItem="GEa-ZB-S4D" secondAttribute="leading" id="E9M-yk-MBl"/>
                             <constraint firstItem="68Q-YW-JeX" firstAttribute="top" secondItem="GEa-ZB-S4D" secondAttribute="top" id="HZQ-Iw-w5E"/>
                             <constraint firstItem="68Q-YW-JeX" firstAttribute="leading" secondItem="GEa-ZB-S4D" secondAttribute="leading" id="KiO-Mb-lvG"/>
+                            <constraint firstItem="hmk-IH-eJK" firstAttribute="centerX" secondItem="C5z-kg-81g" secondAttribute="centerX" id="Yge-s8-hAh"/>
                             <constraint firstItem="2aw-tg-O9u" firstAttribute="top" secondItem="68Q-YW-JeX" secondAttribute="bottom" id="j2c-8f-VlD"/>
+                            <constraint firstItem="hmk-IH-eJK" firstAttribute="centerY" secondItem="C5z-kg-81g" secondAttribute="centerY" id="lFM-ae-NVC"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -823,6 +828,7 @@
                     <connections>
                         <outlet property="barButtonItem" destination="4hR-fp-WKS" id="CUc-a7-RS3"/>
                         <outlet property="containerView" destination="2aw-tg-O9u" id="cSU-Ix-yvb"/>
+                        <outlet property="spinner" destination="hmk-IH-eJK" id="oF7-ev-E9g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPs-SE-nAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

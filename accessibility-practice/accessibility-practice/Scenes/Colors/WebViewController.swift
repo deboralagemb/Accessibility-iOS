@@ -17,7 +17,8 @@ class WebViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet private var containerView: UIView!
     @IBOutlet private var barButtonItem: UIBarButtonItem!
-
+    @IBOutlet private var spinner: UIActivityIndicatorView!
+    
     // MARK: - Properties
     var url: String?
     var delegate: WebViewControllerDelegate?
@@ -36,14 +37,21 @@ class WebViewController: UIViewController {
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureSpinner()
         configureWebView()
         UIAccessibility.post(notification: .screenChanged, argument: self)
     }
     
     // MARK: - Private
+    private func configureSpinner() {
+        spinner.startAnimating()
+        spinner.hidesWhenStopped = true
+    }
+    
     private func configureWebView() {
         let webView = WKWebView()
         webView.translatesAutoresizingMaskIntoConstraints = false
+        webView.navigationDelegate = self
         containerView.addSubview(webView)
         containerView.addConstraints([webView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: .zero),
                                       webView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: .zero),
@@ -61,3 +69,10 @@ class WebViewController: UIViewController {
         delegate?.didTapBarButtonItem()
     }
 }
+
+extension WebViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        spinner.stopAnimating()
+    }
+}
+

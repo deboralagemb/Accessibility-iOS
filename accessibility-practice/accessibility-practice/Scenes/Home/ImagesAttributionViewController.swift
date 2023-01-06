@@ -9,6 +9,7 @@ import UIKit
 
 class ImagesAttributionViewController: UITableViewController {
     
+    // MARK: - Properties
     private var models: [FlaticonModel] = [
         FlaticonModel(title: LocalizedStrings.ImagesRef.googleTitle,
                       URL: "https://www.flaticon.com/br/icones-gratis/google"),
@@ -20,6 +21,7 @@ class ImagesAttributionViewController: UITableViewController {
                       URL: "https://www.flaticon.com/br/stickers-gratis/linkedin")
     ]
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         UIAccessibility.post(notification: .screenChanged, argument: self)
