@@ -70,4 +70,20 @@ class ColorContrastViewController: UIViewController {
     @objc func infoButtonTapped() {
         presentAlert()
     }
+
+    @IBAction func learnMoreButtonTapped() {
+        let url = "https://designsystem.digital.gov/design-tokens/color/overview/"
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController else { return }
+        vc.url = url
+        vc.delegate = self
+        present(vc, animated: true)
+    }
+}
+
+// MARK: - WebViewControllerDelegate
+extension ColorContrastViewController: WebViewControllerDelegate {
+    func didTapBarButtonItem() {
+        dismiss(animated: true)
+    }
 }

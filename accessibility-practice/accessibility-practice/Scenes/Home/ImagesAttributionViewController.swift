@@ -22,6 +22,7 @@ class ImagesAttributionViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIAccessibility.post(notification: .screenChanged, argument: self)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,7 +38,15 @@ class ImagesAttributionViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let url = models[indexPath.row].URL
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController else { return }
+        vc.url = url
+        vc.delegate = self
+        present(vc, animated: true)
+    }
 }
 
 struct FlaticonModel {
@@ -47,5 +56,12 @@ struct FlaticonModel {
     init(title: String, URL: String) {
         self.title = title
         self.URL = URL
+    }
+}
+
+// MARK: - WebViewControllerDelegate
+extension ImagesAttributionViewController: WebViewControllerDelegate {
+    func didTapBarButtonItem() {
+        dismiss(animated: true)
     }
 }

@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -165,7 +166,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <segue destination="KhI-b3-f4r" kind="presentation" modalPresentationStyle="automatic" id="o1R-KU-uM1"/>
+                                    <action selector="learnMoreButtonTapped" destination="jRx-cT-24y" eventType="touchUpInside" id="d8n-i0-jsD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -779,24 +780,58 @@
             </objects>
             <point key="canvasLocation" x="-443" y="16"/>
         </scene>
-        <!--Ok-->
+        <!--Web View Controller-->
         <scene sceneID="oDf-vc-cMY">
             <objects>
-                <viewController id="KhI-b3-f4r" customClass="WebViewController" customModule="accessibility_practice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" id="KhI-b3-f4r" userLabel="Web View Controller" customClass="WebViewController" customModule="accessibility_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C5z-kg-81g">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aw-tg-O9u">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68Q-YW-JeX">
+                                <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                                <items>
+                                    <navigationItem id="iuA-6U-Xx6">
+                                        <barButtonItem key="rightBarButtonItem" title=" " id="4hR-fp-WKS">
+                                            <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                                            <connections>
+                                                <action selector="didTapBarButtonItem:" destination="KhI-b3-f4r" id="GsC-xQ-Aed"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GEa-ZB-S4D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GEa-ZB-S4D" firstAttribute="trailing" secondItem="2aw-tg-O9u" secondAttribute="trailing" id="1Ij-Ck-zVP"/>
+                            <constraint firstItem="GEa-ZB-S4D" firstAttribute="bottom" secondItem="2aw-tg-O9u" secondAttribute="bottom" id="7Fs-es-Nol"/>
+                            <constraint firstItem="68Q-YW-JeX" firstAttribute="trailing" secondItem="GEa-ZB-S4D" secondAttribute="trailing" id="DnI-NE-daF"/>
+                            <constraint firstItem="2aw-tg-O9u" firstAttribute="leading" secondItem="GEa-ZB-S4D" secondAttribute="leading" id="E9M-yk-MBl"/>
+                            <constraint firstItem="68Q-YW-JeX" firstAttribute="top" secondItem="GEa-ZB-S4D" secondAttribute="top" id="HZQ-Iw-w5E"/>
+                            <constraint firstItem="68Q-YW-JeX" firstAttribute="leading" secondItem="GEa-ZB-S4D" secondAttribute="leading" id="KiO-Mb-lvG"/>
+                            <constraint firstItem="2aw-tg-O9u" firstAttribute="top" secondItem="68Q-YW-JeX" secondAttribute="bottom" id="j2c-8f-VlD"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Ok" style="browser" id="Clb-fA-PPF"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="barButtonItem" destination="4hR-fp-WKS" id="CUc-a7-RS3"/>
+                        <outlet property="containerView" destination="2aw-tg-O9u" id="cSU-Ix-yvb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPs-SE-nAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-443" y="2340"/>
+            <point key="canvasLocation" x="-443" y="2220"/>
         </scene>
     </scenes>
     <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
