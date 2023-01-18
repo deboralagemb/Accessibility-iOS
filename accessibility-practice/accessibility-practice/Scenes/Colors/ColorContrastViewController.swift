@@ -67,11 +67,12 @@ class ColorContrastViewController: UIViewController {
     }
     
     // MARK: - Actions
-    @objc func infoButtonTapped() {
+    @objc
+    private func infoButtonTapped() {
         presentAlert()
     }
 
-    @IBAction func learnMoreButtonTapped() {
+    @IBAction private func learnMoreButtonTapped() {
         let url = "https://designsystem.digital.gov/design-tokens/color/overview/"
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let vc = storyboard.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController else { return }

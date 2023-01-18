@@ -83,7 +83,8 @@ class LightDarkModeViewController: UIViewController {
     }
     
     // MARK: - Actions
-    @objc func infoButtonTapped() {
+    @objc
+    private func infoButtonTapped() {
         presentAlert()
     }
 }

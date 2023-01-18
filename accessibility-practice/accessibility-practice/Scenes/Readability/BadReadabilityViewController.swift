@@ -124,15 +124,30 @@ class BadReadabilityViewController: UIViewController {
     }
     
     // MARK: - Actions
-    @objc func infoButtonTapped() {
+    @objc
+    private func infoButtonTapped() {
         presentAlert()
     }
     
-    @objc func forgotPasswordLabelTapped() {
+    @objc
+    private func forgotPasswordLabelTapped() {
         genericButtonTapped()
     }
 
-    @objc func signUpLabelTapped() {
+    @objc
+    private func signUpLabelTapped() {
+        genericButtonTapped()
+    }
+    
+    @IBAction private func googleButtonTapped() {
+        genericButtonTapped()
+    }
+    
+    @IBAction private func twitterButtonTapped() {
+        genericButtonTapped()
+    }
+    
+    @IBAction private func facebookButtonTapped() {
         genericButtonTapped()
     }
 }

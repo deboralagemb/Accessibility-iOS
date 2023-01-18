@@ -479,6 +479,9 @@
                                                     <constraint firstAttribute="width" secondItem="J8S-vW-ynz" secondAttribute="height" multiplier="1:1" id="uye-nY-ek9"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                <connections>
+                                                    <action selector="googleButtonTapped" destination="iZl-na-Vgh" eventType="touchUpInside" id="qvI-rW-lOg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMn-s0-BHZ">
                                                 <rect key="frame" x="58" y="0.0" width="42" height="42"/>
@@ -487,6 +490,9 @@
                                                     <constraint firstAttribute="height" constant="42" id="jIA-qP-F4p"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                <connections>
+                                                    <action selector="twitterButtonTapped" destination="iZl-na-Vgh" eventType="touchUpInside" id="Hgg-c7-Jpc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jp-Sg-uNH">
                                                 <rect key="frame" x="116" y="0.0" width="42" height="42"/>
@@ -495,6 +501,9 @@
                                                     <constraint firstAttribute="height" constant="42" id="e3e-El-ap5"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                <connections>
+                                                    <action selector="facebookButtonTapped" destination="iZl-na-Vgh" eventType="touchUpInside" id="lKk-jZ-7R3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -628,6 +637,9 @@
                                                     <constraint firstAttribute="height" constant="42" id="JYU-Rk-lGQ"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                <connections>
+                                                    <action selector="googleButtonTapped" destination="GCw-Tu-QEB" eventType="touchUpInside" id="8V0-3f-FzX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9H-e4-JRP">
                                                 <rect key="frame" x="58" y="0.0" width="42" height="42"/>
@@ -636,6 +648,9 @@
                                                     <constraint firstAttribute="height" constant="42" id="7qB-Wd-nQY"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                <connections>
+                                                    <action selector="twitterButtonTapped" destination="GCw-Tu-QEB" eventType="touchUpInside" id="ZiN-F1-Sl9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DW-kw-xzo">
                                                 <rect key="frame" x="116" y="0.0" width="42" height="42"/>
@@ -644,6 +659,9 @@
                                                     <constraint firstAttribute="height" constant="42" id="d83-RI-hxB"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                <connections>
+                                                    <action selector="facebookButtonTapped" destination="GCw-Tu-QEB" eventType="touchUpInside" id="LvJ-TE-0rg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
