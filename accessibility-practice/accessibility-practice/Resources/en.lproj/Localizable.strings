@@ -1,0 +1,67 @@
+/* 
+  Localizable.strings
+  accessibility-practice
+
+  Created by Débora Lage on 29/09/22.
+  
+*/
+
+"Home.Title" = "Accessibility";
+"Home.Colors.Button" = "Colors";
+"Home.Fonts.Button" = "Fonts";
+"Home.Readability.Button" = "Readability";
+"Home.ImagesRef.Button" = "Images' authors attribution";
+
+"Colors.Title" = "Colors";
+"Colors.Bad.Example" = "This is a bad contrast example";
+"Colors.Good.Example" = "This is a good contrast example";
+"Colors.Contrast.Title" = "Colors constrast";
+"Colors.Appearance.Title" = "Light and dark mode";
+"Colors.Appearance.System" = "Using native colors which names start with `system' is a good practice (when possible) because colors adapt to changing appearance";
+"Colors.Appearance.Bad.Example" = "Using the other colors in the system, or custom colors without any treatment, can bring unwanted or uncomfortable visual experiences.";
+"Colors.Appearance.Good.Example" = "However, it is possible to use custom colors by changing them according to the `UITraitCollection.current.userInterfaceStyle'";
+"Colors.Appearance.Learn.More" = "Learn more";
+"Colors.Contrast.Alert.Title" = "How to verify";
+"Colors.Contrast.Alert.Message" = "Open Accessibility Inspector -> Audit -> Run audit";
+"Colors.Alert.Button" = "Ok";
+"Colors.Appearance.Alert.Title" = "How to verify";
+"Colors.Appearance.Alert.Message" = "Open Settings and change the appearance from light to dark on `Developer'";
+
+"Fonts.Title" = "Fonts";
+"Fonts.System.Example" = "System fonts are dynamic";
+"Fonts.Bad.Example" = "Custom fonts are not dynamic (bad example)";
+"Fonts.Good.Example" = "Therefore, use `UIFontMetrics' to define the font's dynamic behavior (good example)";
+"Fonts.Alert.Title" = "How to verify";
+"Fonts.Alert.Message" = "On Settings -> Accessibility -> Display & Text size -> Larger text -> activate and increase text size";
+"Fonts.Alert.Button" = "Ok";
+
+"Readability.Title" = "Readability";
+"Readability.Good.Button.Title" = "Good readability";
+"Readability.Bad.Button.Title" = "Bad readability";
+"Readability.Login.Button" = "Login";
+"Readability.Social.Media" = "Or continue with";
+"Readability.Account.Question" = "Don't have an account?";
+"Readability.Sign.Up" = "Sign up";
+"Readability.Forgot.Password" = "Forgot password";
+"Readability.Email.Address" = "Email address";
+"Readability.Password" = "Password";
+"Readability.Email.Address.Hint" = "Insert email to login";
+"Readability.Password.Hint" = "Insert password to login";
+"Readability.Alert.Title" = "How to verify";
+"Readability.Alert.Message" = "Run VoiceOver on real device or open accessibility inspector for simulator";
+"Readability.Alert.Button" = "Ok";
+"Readability.Generic.Alert.Title" = "Generic button action";
+
+"Accessibility.Facebook.Button" = "Open Facebook";
+"Accessibility.Google.Button" = "Open Google";
+"Accessibility.Twitter.Button" = "Open Twitter";
+
+"Accessibility.Facebook.Button.Hint" = "Sign in with Facebook account";
+"Accessibility.Google.Button.Hint" = "Sign in with Google account";
+"Accessibility.Twitter.Button.Hint" = "Sign in with Twitter account";
+"Accessibility.Brand.Image" = "Brand logo image";
+
+"ImagesRef.Facebook.Button.Title" = "Facebook icons created by NajmunNahar - Flaticon";
+"ImagesRef.Google.Button.Title" = "Google icons created by Freepik - Flaticon";
+"ImagesRef.Twitter.Button.Title" = "Twitter icons created by Pixel perfect - Flaticon";
+"ImagesRef.Linkedin.Button.Title" = "LinkedIn stickers created by Stickers - Flaticon";

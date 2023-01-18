@@ -1,0 +1,67 @@
+/* 
+  Localizable.strings
+  accessibility-practice
+
+  Created by Débora Lage on 29/09/22.
+  
+*/
+
+"Home.Title" = "Acessibilidade";
+"Home.Colors.Button" = "Cores";
+"Home.Fonts.Button" = "Fontes";
+"Home.Readability.Button" = "Legibilidade";
+"Home.ImagesRef.Button" = "Atribuição aos autores das imagens";
+
+"Colors.Title" = "Cores";
+"Colors.Bad.Example" = "Esse é um exemplo ruim de contraste";
+"Colors.Good.Example" = "Esse é um exemplo bom de contraste";
+"Colors.Contrast.Title" = "Constraste de cores";
+"Colors.Appearance.Title" = "Modo claro e escuro";
+"Colors.Appearance.System" = "Usar cores nativas que se iniciam com `system' é uma boa prática (quando possível) porque as cores adaptam-se à troca de aparência.";
+"Colors.Appearance.Bad.Example" = "Usar as demais cores do sistema, ou então cores personalizadas sem nenhum tratamento, podem trazer experiências indesejadas ou desconfortáveis.";
+"Colors.Appearance.Good.Example" = "Entretanto, é possível usar cores personalizadas, alterando-as de acordo com o `UITraitCollection.current.userInterfaceStyle'";
+"Colors.Appearance.Learn.More" = "Saiba mais";
+"Colors.Contrast.Alert.Title" = "Como verificar";
+"Colors.Contrast.Alert.Message" = "Abrir o Accessibility Inspector -> Audit -> Run audit";
+"Colors.Alert.Button" = "Ok";
+"Colors.Appearance.Alert.Title" = "Como verificar";
+"Colors.Appearance.Alert.Message" = "Abra Ajustes e mude a aparência de clara para escura em `Desenvolvedor'";
+
+"Fonts.Title" = "Fontes";
+"Fonts.System.Example" = "Fontes do sistema são dinâmicas";
+"Fonts.Bad.Example" = "Fontes customizadas não são dinâmicas (exemplo ruim)";
+"Fonts.Good.Example" = "Para tanto, utilize o `UIFontMetrics' para definir o comportamento dinâmico de sua fonte (exemplo bom)";
+"Fonts.Alert.Title" = "Como verificar";
+"Fonts.Alert.Message" = "Em Ajustes -> Acessibilidade -> Tela e tamanho de texto -> Texto maior -> Ativar e aumentar a fonte";
+"Fonts.Alert.Button" = "Ok";
+
+"Readability.Title" = "Legibilidade";
+"Readability.Good.Button.Title" = "Legibilidade boa";
+"Readability.Bad.Button.Title" = "Legibilidade ruim";
+"Readability.Login.Button" = "Continuar";
+"Readability.Social.Media" = "Ou continue com";
+"Readability.Account.Question" = "Não tem uma conta?";
+"Readability.Sign.Up" = "Cadastre-se";
+"Readability.Forgot.Password" = "Esqueci minha senha";
+"Readability.Email.Address" = "Endereço de email";
+"Readability.Password" = "Senha";
+"Readability.Email.Address.Hint" = "Insira email para continuar";
+"Readability.Password.Hint" = "Insira senha para continuar";
+"Readability.Alert.Title" = "Como verificar";
+"Readability.Alert.Message" = "Ative o VoiceOver em um dispositivo real ou abra o Accessibility Inspector para o simulador";
+"Readability.Alert.Button" = "Ok";
+"Readability.Generic.Alert.Title" = "Ação para botão genérico";
+
+"Accessibility.Facebook.Button" = "Abrir Facebook";
+"Accessibility.Google.Button" = "Abrir Google";
+"Accessibility.Twitter.Button" = "Abrir Twitter";
+
+"Accessibility.Facebook.Button.Hint" = "Continuar com uma conta do Facebook";
+"Accessibility.Google.Button.Hint" = "Continuar com uma conta do Google";
+"Accessibility.Twitter.Button.Hint" = "Continuar com uma conta do Twitter";
+"Accessibility.Brand.Image" = "Imagem do logotipo da marca";
+
+"ImagesRef.Facebook.Button.Title" = "Facebook ícones criados por NajmunNahar - Flaticon";
+"ImagesRef.Google.Button.Title" = "Google ícones criados por Freepik - Flaticon";
+"ImagesRef.Twitter.Button.Title" = "Twitter ícones criados por Pixel perfect - Flaticon";
+"ImagesRef.Linkedin.Button.Title" = "LinkedIn figurinhas criadas por Stickers - Flaticon";
