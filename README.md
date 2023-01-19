@@ -1,7 +1,6 @@
 # Accessibility-iOS
 
 Project to practice and demonstrate basic accessibility tools that Swift + UIKit provide to developers.
-The project is compatible with 
    
 ### 1. Language
 The project is available for devices with preferred languages set to English or Portuguese (BR).
