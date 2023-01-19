@@ -43,7 +43,7 @@
 "Readability.Account.Question" = "Não tem uma conta?";
 "Readability.Sign.Up" = "Cadastre-se";
 "Readability.Forgot.Password" = "Esqueci minha senha";
-"Readability.Email.Address" = "Endereço de email";
+"Readability.Email.Address" = "Email";
 "Readability.Password" = "Senha";
 "Readability.Email.Address.Hint" = "Insira email para continuar";
 "Readability.Password.Hint" = "Insira senha para continuar";

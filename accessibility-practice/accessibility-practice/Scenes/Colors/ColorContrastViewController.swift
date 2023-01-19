@@ -40,14 +40,12 @@ class ColorContrastViewController: UIViewController {
     private func configureBadExampleView() {
         badExampleView.backgroundColor = .black
         badExampleLabel.textColor = .darkGray
-        badExampleLabel.font = .systemFont(ofSize: 18, weight: .light)
         badExampleLabel.text = LocalizedStrings.Colors.badExample
     }
 
     private func configureGoodExampleView() {
         goodExampleView.backgroundColor = .lightGray
         goodExampleLabel.textColor = .black
-        goodExampleLabel.font = .systemFont(ofSize: 18, weight: .bold)
         goodExampleLabel.text = LocalizedStrings.Colors.goodExample
     }
     
